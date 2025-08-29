@@ -68,19 +68,19 @@ local function SetupPVPTeamFrame(frame)
 end
 
 PVPFrame:HookScript("OnShow", function(self)
-		if not self.APInfo then
-			self.APInfo = self:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-			self.APInfo:SetFont("Fonts\\FRIZQT__.TTF", 8, "OUTLINE")
-			self.APInfo:SetPoint("CENTER", self, "TOP", 0, -162)
-			self.APInfo:SetTextColor(1, 1, 1, 1)
-			self.APInfo:SetSize(self:GetWidth() - 50, 0)
-			local locale = GetLocale()
-			if(localization[locale] == nil) then
-				locale = "enUS"
-			end
-			self.APInfo:SetText(localization[locale]["AP_INFO"])
+	if not self.APInfo then
+		self.APInfo = self:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+		self.APInfo:SetFont("Fonts\\FRIZQT__.TTF", 8, "OUTLINE")
+		self.APInfo:SetPoint("CENTER", self, "TOP", 0, -162)
+		self.APInfo:SetTextColor(1, 1, 1, 1)
+		self.APInfo:SetSize(self:GetWidth() - 50, 0)
+		local locale = GetLocale()
+		if(localization[locale] == nil) then
+			locale = "enUS"
 		end
-	end)
+		self.APInfo:SetText(localization[locale]["AP_INFO"])
+	end
+end)
 
 for i, frame in ipairs(pvpTeamFrames) do
     SetupPVPTeamFrame(frame)
