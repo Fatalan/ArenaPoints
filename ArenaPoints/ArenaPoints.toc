@@ -1,0 +1,10 @@
+## Interface: 33500
+## Title: ArenaPoints
+## Title-ruRU: ОчкиАрены
+## Version: 1.0
+## Notes: Calculates how much arena points you'll get on flush! (based on 3.3.5a system with x1 rates)
+## Notes-ruRU: Считает, сколько очков арены вы получите! (вычисления основаны на версии 3.3.5a с рейтами x1)
+## Author: Fatalan
+## X-Website: https://github.com/Fatalan/ArenaPoints
+
+ArenaPoints.lua
